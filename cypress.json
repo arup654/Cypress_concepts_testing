@@ -1,0 +1,17 @@
+
+{
+    "env":
+    
+    {
+        
+        "URL": "https://opensource-demo.orangehrmlive.com/index.php/auth/login",
+
+        "URL1": "http://books.toscrape.com/"
+
+    },
+    "watchForFileChanges":false,
+    "waitForAnimations":true,
+    "execTimeout":60000,
+    "video":false
+
+}
