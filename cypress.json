@@ -12,6 +12,7 @@
     "watchForFileChanges":false,
     "waitForAnimations":true,
     "execTimeout":60000,
-    "video":false
+    "video":false,
+    "chromeWebSecurity": false 
 
 }
