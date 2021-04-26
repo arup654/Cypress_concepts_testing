@@ -24,7 +24,10 @@ describe('Sorting the web table',function()
         
             .map($e1=> parseInt($e1.textContent))// 
             
-            expect(age_values).to.be.sorted({descending:true})// This is chai assertion(to avoid using loadash method _.sortBy())
+            
+            expect(age_values).to.be.sorted({descending:true})
+            cy.log(age_values)
+            // This is chai assertion(to avoid using loadash method _.sortBy())
 
 
         })

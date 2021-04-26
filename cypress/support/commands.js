@@ -41,6 +41,24 @@ import 'cypress-file-upload';
         })
 
     })
+
+    Cypress.Commands.add("whole_spice_product_select",function(units)
+    {
+        cy.get('.item.product.product-item').its('length').then(function($count)
+        {
+          const count=  Cypress._.random(0,$count-1)
+          cy.get('.item.product.product-item').eq(count).within(function($add_prod)
+          {
+              cy.wrap($add_prod).find('#qty').clear({force:true}).type(units)
+              cy.wrap($add_prod).contains('Add to cart').click({force:true})
+
+
+        })
+
+        })
+
+
+    })
 //
 //
 // -- This is a child command --

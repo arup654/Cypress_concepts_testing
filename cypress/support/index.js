@@ -15,9 +15,15 @@
 
 // Import commands.js using ES2015 syntax:
 
-import './commands'
+
+import './commands';
 const chaiSorted = require('chai-sorted');
 chai.use(chaiSorted);
+Cypress.on('uncaught:exception',(err,runnable)=>
+{
+
+    return false
+})
 
 
 
